@@ -1,0 +1,28 @@
+pane	aosp	0	:croot	0	:	0	:/usr/local/code/orion/aosp	1	bash	:
+pane	aosp	1	:kernel	0	:	0	:/usr/local/code/orion/aosp/kernel_imx/arch/arm/boot/dts	1	bash	:
+pane	aosp	2	:Kern-Doc	0	:	0	:/usr/local/code/orion/aosp/kernel_imx/Documentation/devicetree/bindings/interrupt-controller	1	vim	:vim arm,gic.txt
+pane	aosp	3	:ril	0	:	0	:/usr/local/code/orion/aosp/hardware/ril	1	cscope	:cscope -R
+pane	aosp	4	:out	0	:	0	:/usr/local/code/orion/aosp/out/target/product/rosetta	1	bash	:
+pane	aosp	5	:builds	0	:	0	:/mnt/hgfs/Builds	1	bash	:
+pane	aosp	6	:share	0	:	0	:/mnt/hgfs/sushant/Logs/BugRpt0129/FS/data/tombstones	1	bash	:
+pane	aosp	7	:frameworks	0	:	0	:/usr/local/code/orion/aosp/frameworks/opt/net/wifi/service/java/com/android/server/wifi	1	bash	:
+pane	aosp	8	:audio	0	:	0	:/usr/local/code/orion/aosp/kernel_imx/sound/soc/fsl	1	bash	:
+pane	aosp	10	:mmc-driver	0	:	0	:/usr/local/code/orion/aosp/kernel_imx/drivers/mmc/host	0	vim	:vim sdhci-esdhc-imx.c
+pane	aosp	10	:mmc-driver	0	:	1	:/usr/local/code/orion/aosp/kernel_imx/drivers/mmc/host	1	vim	:vim sdhci.c
+pane	aosp	11	:dev-rosetta	0	:-	0	:/usr/local/code/orion/aosp/device/orion/sepolicy	1	vim	:vim sepolicy/file_contexts
+pane	aosp	12	:bash	1	:*	0	:/home/sushant/utilities	1	bash	:
+pane	aosp	13	:cscope	0	:	0	:/usr/local/code/orion/aosp/frameworks/native/cmds	1	cscope	:cscope -R
+window	aosp	0	0	:	bf1f,228x63,0,0,2
+window	aosp	1	0	:	bf20,228x63,0,0,3
+window	aosp	2	0	:	a151,151x136,0,0,4
+window	aosp	3	0	:	b9c2,177x52,0,0,5
+window	aosp	4	0	:	b9c3,177x52,0,0,6
+window	aosp	5	0	:	a154,151x136,0,0,7
+window	aosp	6	0	:	b9c5,177x52,0,0,8
+window	aosp	7	0	:	a096,194x164,0,0,9
+window	aosp	8	0	:	5d10,177x52,0,0,11
+window	aosp	10	0	:	e38d,228x63,0,0{114x63,0,0,13,113x63,115,0,18}
+window	aosp	11	0	:-	5fc3,228x63,0,0,14
+window	aosp	12	1	:*	5fc4,228x63,0,0,15
+window	aosp	13	0	:	5d15,177x52,0,0,16
+state	aosp	

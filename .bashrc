@@ -19,6 +19,9 @@ shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
 
+# enable timestamps in history
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -115,12 +118,20 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH=~/bin:$PATH
-export USE_CCACHE=1
-export LC_ALL=C
-alias vmw='/usr/bin/vmware-user'
-alias kconf='vim /usr/local/code/orion/aosp/kernel_imx/arch/arm/configs/rosetta_android_defconfig'
-alias dts='vim /usr/local/code/orion/aosp/kernel_imx/arch/arm/boot/rosetta-imx7d.dts'
-export CODE="cd /usr/local/code/orion/"
-export PROMPT_COMMAND="echo -n \[\$(date +%H:%M:%S)\]\ "
-export HISTTIMEFORMAT="%d/%m/%y %T "
+eval "$(direnv hook bash)"
+# Add this to your PATH if it’s not already declared
+export PATH=$PATH:$HOME/.local/bin
+
+# Powerline configuration
+if [ -f $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh ]; then
+  $HOME/.local/bin/powerline-daemon -q
+  POWERLINE_BASH_CONTINUATION=1
+  POWERLINE_BASH_SELECT=1
+  source $HOME/.local/lib/python3.6/site-packages/powerline/bindings/bash/powerline.sh
+fi
+if [ -f $HOME/co/backend/bin/taskrunner-completion.bash ]; then
+      . $HOME/co/backend/bin/taskrunner-completion.bash
+fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+alias go_to_vg='ssh -A root@10.6.36.248'

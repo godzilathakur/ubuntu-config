@@ -218,3 +218,8 @@ if get(g:, 'elite_mode')
  nnoremap <Left>  :vertical resize +2<CR>
  nnoremap <Right> :vertical resize -2<CR>
 endif
+set textwidth=80
+autocmd FileType gitcommit set textwidth=72
+set colorcolumn+=1
+autocmd FileType gitcommit set colorcolumn+=64
+set autoread

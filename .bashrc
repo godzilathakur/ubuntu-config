@@ -135,3 +135,6 @@ fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 alias go_to_vg='ssh -A root@10.6.36.248'
+alias gogrep='grep -Rl --include \*.go --exclude \*.pb.go'
+alias gogrepv='grep -R --include \*.go --exclude \*.pb.go'
+alias gistory='history | grep git'
